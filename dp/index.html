@@ -9,20 +9,20 @@
 
 <title>My DPlayer</title>
 <style type="text/css">body,html,.dplayer{padding:0;margin:0;width:100%;color:#aaa;background-color:#000}a{text-decoration:none}#dplayer,#poster{position:fixed;top:0;left:0;right:0;bottom:0;z-index:9;overflow:hidden;object-fit:cover;object-position:center center}#poster{z-index:998;background-color:#000}#poster .play-btn,.play-icon{position:absolute;width:54px;height:54px;left:50%;top:50%;z-index:9999;margin-left:-27px;margin-top:-27px}#poster .play-btn img,.play-icon img{width:54px;height:54px;z-index:990}.play-icon{display:none}</style>
-<script src="./jquery.min.js"></script>
-<script src="./hls.min.js"></script>
-<script src="./DPlayer.min.js"></script>
-<link href="./DPlayer.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/h175h32/wz@1.0/dp/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/h175h32/wz@1.0/dp/hls.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/h175h32/wz@1.0/dp/DPlayer.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/h175h32/wz@1.0/dp/DPlayer.min.css" rel="stylesheet">
 </head>
 <body>
 <div id="shows">
   <div id="poster" style="display: none;">
     <div class="play-btn">
-      <img src="./play-icon.png">
+      <img src="https://cdn.jsdelivr.net/gh/h175h32/wz@1.0/dp/play-icon.png">
     </div>
   </div>
   <div class="play-icon" style="display: none;">
-    <img src="./play-icon.png">
+    <img src="https://cdn.jsdelivr.net/gh/h175h32/wz@1.0/dp/play-icon.png">
   </div>
 </div>
 <div id="dplayer"></div>
@@ -58,7 +58,7 @@ const dp = new DPlayer({
     video: {
         url: vurl,
         type: 'hls',
-      	pic: './4a.gif'
+      	pic: 'https://cdn.jsdelivr.net/gh/h175h32/wz@1.0/dp/4a.gif'
     }
 });
 	dp.on('loadstart', function () {
